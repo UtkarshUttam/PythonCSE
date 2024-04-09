@@ -438,3 +438,35 @@ print("Hello,", name)
 # Install Python for Windows from python.org.
 # Use Python executable and command prompt for Windows-specific development.
 ```
+
+
+
+
+# Factorial
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Test the factorial function
+number = 5
+print("Factorial of", number, "is", factorial(number))
+````
+
+
+# Fibonacci
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Test the Fibonacci function
+terms = 10
+print("Fibonacci sequence:")
+for i in range(terms):
+    print(fibonacci(i), end=" ")
+```
